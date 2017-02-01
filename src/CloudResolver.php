@@ -12,4 +12,20 @@ namespace CloudResolv;
 class CloudResolver
 {
 
+    
+    public function query () {
+        
+    }
+    
+    
+    public function service(string $service)  {
+        
+    }
+    
+    
+    public function getAvailabilityZoneNameByIp(string $ip) : string {
+        
+    }
+    
+    
 }

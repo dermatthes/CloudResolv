@@ -1,0 +1,32 @@
+{
+    "name": "dns/cloudResolv",
+    "type": "library",
+    "description": "Parse cloud services from dns records",
+    "keywords": ["dns", "framework"],
+    "homepage": "https://getgismo.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthias Leuffen",
+            "email": "matthes@leuffen.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "pear/net_dns2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "CloudResolv\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/test/"
+        ]
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
