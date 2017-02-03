@@ -17,4 +17,11 @@
         
         public $name;
         
+        
+        public function __construct($name, $ttl, $class="IN") {
+            $this->class = $class;
+            $this->ttl = $ttl;
+            $this->name = $name;
+        }
+
     }

@@ -11,9 +11,6 @@
 
     interface CloudResolvResolver {
 
-
-
-
         public function query ($host) : array;
 
 

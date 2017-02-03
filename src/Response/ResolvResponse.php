@@ -9,34 +9,23 @@
     namespace CloudResolv\Response;
 
 
-    class ResolvResponse {
+    interface ResolvResponse {
 
 
-        
-        public function forWriting() : ResolvResponse {
-            
-        }
-        
-        public function forReading() : ResolvResponse {
-            
-        }
 
 
-        public function availabilityZone (string $zoneName) : ResolvResponse {
-            
-        }
+        public function forWriting() : ResolvResponse;
+        
+        public function forReading() : ResolvResponse;
+
+
+        public function availabilityZone (string $zoneName) : ResolvResponse;
         
         
-        public function distributionKey(string $key) : ResolvResponse {
-            
-        }
+        public function distributionKey(string $key) : ResolvResponse;
         
-        public function host() : ResolvHost {
-            
-        }
+        public function host() : ResolvHost;
         
-        public function hosts() : array {
-            
-        }
+        public function hosts() : array;
         
     }

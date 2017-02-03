@@ -9,23 +9,33 @@
 namespace CloudResolv;
 
 
+use CloudResolv\Resolver\CloudResolvResolver;
+use CloudResolv\Response\ResolvResponse;
+use CloudResolv\Response\ResponseFactory;
+
 class CloudResolver
 {
 
+    /**
+     * @var CloudResolvResolver
+     */
+    private $mResolver;
     
-    public function query () {
-        
+
+    public function setResolver (CloudResolvResolver $resolver) {
+        $this->mResolver = $resolver;
+    }
+
+
+    public function query (string $query) : ResolvResponse {
+        $builder = new ResponseFactory();
+
+        $rrArr = $this->mResolver->query($query);
+        return $builder->build($rrArr);
     }
     
     
-    public function service(string $service)  {
+    public function service(string $service) : ResolvResponse {
         
-    }
-    
-    
-    public function getAvailabilityZoneNameByIp(string $ip) : string {
-        
-    }
-    
-    
+    }    
 }
