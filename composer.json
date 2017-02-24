@@ -15,13 +15,18 @@
         "php": ">=7.0",
         "pear/net_dns2": "*"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
     "autoload": {
         "psr-4": {
             "CloudResolv\\": "src/"
-        },
-        "exclude-from-classmap": [
-            "/test/"
-        ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CloudResolvTest\\": "test/"
+        }
     },
     "minimum-stability": "dev",
     "extra": {

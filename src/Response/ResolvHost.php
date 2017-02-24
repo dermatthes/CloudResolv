@@ -12,7 +12,7 @@
     class ResolvHost {
 
 
-        public function __construct(ResolvResponse $response) {
+        public function __construct(ResolvResponse $response, array $hostInfo) {
         }
 
 

@@ -11,6 +11,7 @@ namespace CloudResolv;
 
 use CloudResolv\Resolver\CloudResolvResolver;
 use CloudResolv\Response\ResolvResponse;
+use CloudResolv\Response\ResolvResponse_CRDL_RR;
 use CloudResolv\Response\ResponseFactory;
 
 class CloudResolver
