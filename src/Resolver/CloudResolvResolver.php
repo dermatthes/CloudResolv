@@ -11,7 +11,7 @@
 
     interface CloudResolvResolver {
 
-        public function query ($host) : array;
+        public function query ($host) : CloudResolvResultSet;
 
 
     }

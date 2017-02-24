@@ -13,11 +13,13 @@
     use PHPUnit\Framework\TestCase;
 
     class RoundRobinTest extends TestCase {        
-        
+
+        /*
         public function testRoundRobin () {
             $r = new CloudResolver();
             $r->service("rr.service-a.api-cloud.de");
         }
+        */
         
         
         

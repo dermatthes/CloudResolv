@@ -85,7 +85,7 @@
         }
 
 
-        public function query($host) : array {
-            return $this->mRecords[$host];
+        public function query($host) : CloudResolvResultSet {
+            return new CloudResolvResultSet($this->mRecords[$host]);
         }
     }

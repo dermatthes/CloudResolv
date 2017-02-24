@@ -11,6 +11,8 @@
 
     class CloudResolv_RR {
 
+        public $sortIndex;
+        
         public $class;
         
         public $ttl;

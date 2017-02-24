@@ -18,16 +18,24 @@
         
         
         public function __construct(array $rrArr) {
-            foreach ($rrArr as $cur) {
-                $type = str_replace(CloudResolv_RR::class, "", get_class($cur));
-                if ( ! isset ($this->rr[$type]))
-                    $this->rr[$type] = [];
-                $rr[$type][] = $cur;                
-            }
+            $this->rr = $rrArr;
         }
-        
-        
-        
+
+
+        /**
+         * @param $className
+         * @return CloudResolv_RR[]
+         */
+        public function getByType($className) {
+            $result = [];
+            foreach ($this->rr as $curRR) {
+                if ($curRR instanceof $className)
+                    $result[] = $curRR;
+            }
+            return $result;
+
+        }
+
 
 
     }
